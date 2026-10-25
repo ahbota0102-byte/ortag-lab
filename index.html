@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ORTAQ LAB — шетелдегі қазақ жастарын Қазақстандағы команда, тәлімгер және серіктестермен байланыстыратын жоба алаңы.">
+<title>ORTAQ LAB | Бір идея. Ортақ болашақ.</title>
+<style>
+:root{--ink:#172a27;--green:#176b54;--mint:#e7f4ed;--paper:#fbfaf6;--gold:#e8b85d;--muted:#65736e;--line:#e4e9e3;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}
+.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.05em;font-size:1.08rem}.mark{display:grid;place-items:center;width:38px;height:38px;background:var(--green);color:white;border-radius:12px;font-size:1.1rem}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.94rem}.btn{border:0;border-radius:999px;padding:12px 19px;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.18s}.btn-primary{background:var(--green);color:white}.btn-primary:hover{background:#0f533f;transform:translateY(-1px)}.btn-light{background:white;color:var(--green);border:1px solid var(--line)}.btn-light:hover{background:var(--mint)}.hero{padding:62px 0 54px;display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--mint);color:var(--green);border-radius:999px;padding:7px 12px;font-size:.82rem;font-weight:800}.hero h1{font-size:clamp(2.7rem,6vw,5.2rem);line-height:.99;letter-spacing:-.055em;margin:20px 0}.hero h1 span{color:var(--green)}.hero p{font-size:1.1rem;max-width:600px;color:var(--muted)}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.visual{background:#e7f1e9;border-radius:28px;min-height:350px;padding:25px;position:relative;overflow:hidden}.orbit{position:absolute;border:1px solid #b5d3c1;border-radius:50%;width:290px;height:290px;left:50%;top:50%;transform:translate(-50%,-50%)}.orbit.two{width:210px;height:210px}.center-node{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--green);color:white;width:116px;height:116px;border-radius:28px;display:grid;place-items:center;text-align:center;font-weight:850;box-shadow:0 15px 35px #176b5433}.node{position:absolute;background:white;border:1px solid #dce9df;border-radius:15px;padding:11px 14px;box-shadow:0 8px 25px #1a3a2810;font-size:.85rem;font-weight:750}.n1{top:32px;left:23px}.n2{top:48px;right:20px}.n3{bottom:38px;left:25px}.n4{bottom:28px;right:18px}.section{padding:58px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.kicker{color:var(--green);font-size:.78rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.section h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.04em;line-height:1.1;margin:8px 0}.sub{color:var(--muted);max-width:620px;margin:0}.filters{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}.filter{border:1px solid var(--line);border-radius:999px;background:white;padding:8px 14px;color:var(--muted);font-weight:700}.filter.active{background:var(--green);border-color:var(--green);color:white}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{background:white;border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;min-height:280px}.project-top{display:flex;justify-content:space-between;gap:10px;align-items:start}.emoji{width:44px;height:44px;display:grid;place-items:center;background:var(--mint);border-radius:14px;font-size:1.35rem}.tag{font-size:.75rem;font-weight:800;color:var(--green);background:var(--mint);padding:5px 9px;border-radius:999px;white-space:nowrap}.project h3{margin:17px 0 7px;font-size:1.15rem;line-height:1.25}.project p{color:var(--muted);font-size:.92rem;margin:0 0 18px}.meta{font-size:.8rem;color:var(--muted);margin-top:auto;padding:12px 0;border-top:1px solid var(--line)}.project .btn{width:100%;margin-top:10px}.empty{grid-column:1/-1;text-align:center;background:white;border:1px dashed var(--line);padding:30px;border-radius:18px;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.step{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}.step-no{width:35px;height:35px;border-radius:11px;background:var(--green);color:white;display:grid;place-items:center;font-weight:850}.step h3{margin:15px 0 6px}.step p{color:var(--muted);margin:0;font-size:.93rem}.banner{background:var(--green);color:white;border-radius:25px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:25px}.banner p{color:#d9eae1;max-width:600px;margin-bottom:0}.banner .btn{background:white;color:var(--green);flex-shrink:0}.footer{padding:28px 0 38px;color:var(--muted);font-size:.86rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.modal-backdrop{position:fixed;inset:0;background:#10221dcc;display:none;align-items:center;justify-content:center;padding:18px;z-index:10}.modal-backdrop.open{display:flex}.modal{background:white;border-radius:22px;padding:25px;width:min(540px,100%);max-height:90vh;overflow:auto;box-shadow:0 25px 90px #0003}.modal-head{display:flex;justify-content:space-between;gap:15px;align-items:start}.modal h2{margin:0 0 7px}.close{border:0;background:var(--mint);border-radius:50%;width:35px;height:35px;font-size:1.2rem;color:var(--green)}.field{display:grid;gap:6px;margin:14px 0}.field label{font-weight:750;font-size:.88rem}.field input,.field select,.field textarea{width:100%;border:1px solid #d9e2db;border-radius:11px;padding:11px 12px;background:#fff;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.field small{color:var(--muted)}.form-note{font-size:.82rem;color:var(--muted);background:#f5f8f4;padding:10px 12px;border-radius:10px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#142c25;color:white;border-radius:12px;padding:12px 18px;display:none;z-index:20;max-width:90%;box-shadow:0 8px 25px #0002}.toast.show{display:block}.menu-toggle{display:none}
+@media(max-width:780px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:34px;gap:25px}.visual{min-height:300px}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.banner{align-items:start;flex-direction:column}.hero h1{font-size:clamp(2.7rem,12vw,4.5rem)}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.nav{padding:15px 0}.hero{padding-bottom:25px}.visual{min-height:280px;padding:15px}.orbit{width:240px;height:240px}.orbit.two{width:170px;height:170px}.center-node{width:96px;height:96px;font-size:.9rem}.node{font-size:.76rem;padding:9px 10px}.n1{left:8px;top:20px}.n2{right:8px;top:28px}.n3{left:8px;bottom:25px}.n4{right:8px;bottom:20px}.section{padding:42px 0}.banner{padding:25px}.footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home" aria-label="ORTAQ LAB басты бет"><span class="mark">O</span> ORTAQ LAB</a>
+  <nav class="navlinks"><a href="#projects">Жобалар</a><a href="#how">Қалай жұмыс істейді?</a><a href="#about">Біз туралы</a></nav>
+  <button class="btn btn-primary" onclick="openModal('project')">＋ Жоба ұсыну</button>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <span class="eyebrow">🌍 Бірлікке құрылған жоба алаңы</span>
+    <h1>Бір идея.<br><span>Ортақ болашақ.</span></h1>
+    <p>Әлемдегі қазақ жастарын Қазақстандағы таланттармен байланыстырамыз. Идеяңды жарияла, команда тап, бірге нақты нәтиже жаса.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#projects">Жобаларды көру <span>↗</span></a><button class="btn btn-light" onclick="openModal('project')">Өз идеямды ұсыну ＋</button></div>
+    <p style="font-size:.83rem;margin-top:18px">🤝 Команда · 💡 Идея · 🚀 Нақты нәтиже</p>
+  </div>
+  <div class="visual" aria-label="Әлемдегі жастардың бірлесуін бейнелейтін иллюстрация">
+    <div class="orbit"></div><div class="orbit two"></div>
+    <div class="center-node">ORTAQ<br>LAB</div>
+    <div class="node n1">🇲🇳 Моңғолия</div><div class="node n2">🇰🇿 Қазақстан</div>
+    <div class="node n3">💡 Идея</div><div class="node n4">🤝 Команда</div>
+  </div>
+</section>
+<section class="section" id="projects" style="background:#f2f6f0">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Бірге жасайық</div><h2>Жобалар алаңы</h2><p class="sub">Өзіңе қызық идеяны тап немесе командаға керек дағдыңды ұсын.</p></div><button class="btn btn-primary" onclick="openModal('project')">＋ Жоба қосу</button></div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-filter="Барлығы">Барлығы</button><button class="filter" data-filter="IT">IT</button><button class="filter" data-filter="Білім">Білім</button><button class="filter" data-filter="Мәдениет">Мәдениет</button><button class="filter" data-filter="Әлеуметтік">Әлеуметтік</button>
+    </div>
+    <div class="grid" id="projectGrid"></div>
+    <p style="font-size:.8rem;color:#65736e;margin-top:16px">* Көрсетілген кейбір жобалар демонстрациялық мысал ретінде берілген.</p>
+  </div>
+</section>
+<section class="section wrap" id="how">
+  <div class="kicker">Қарапайым үш қадам</div><h2>Идеядан ортақ іске дейін</h2><p class="sub">ORTAQ LAB адамдарды жай ғана таныстырмайды. Бірге жұмыс істеуге алғашқы қадам жасауға көмектеседі.</p>
+  <div class="steps">
+    <article class="step"><div class="step-no">01</div><h3>Идеяңды жарияла</h3><p>Жоба мақсатын, бағытын және қандай көмек керегін жаз.</p></article>
+    <article class="step"><div class="step-no">02</div><h3>Команда тап</h3><p>Бағдарламашы, дизайнер, зерттеуші немесе басқа серіктес ізде.</p></article>
+    <article class="step"><div class="step-no">03</div><h3>Нәтиже жаса</h3><p>Міндеттерді бөлісіп, прототипке немесе нақты іске қарай қадам жаса.</p></article>
+  </div>
+</section>
+<section class="wrap section" id="about">
+  <div class="banner"><div><div class="kicker" style="color:#c4e6d1">БІЗДІҢ МАҚСАТ</div><h2>Қашықтық бөледі, ортақ мақсат біріктіреді.</h2><p>ORTAQ LAB — шетелдегі қазақ жастары мен Қазақстандағы білім, тәжірибе және мүмкіндіктер арасында көпір құруға арналған бастама.</p></div><button class="btn" onclick="openModal('join')">Командаға қосылу ↗</button></div>
+</section>
+</main>
+<footer class="wrap footer"><div><strong>ORTAQ LAB</strong> · Бір идея. Ортақ болашақ.</div><div>Жастардың идеяларын ортақ іске айналдыруға арналған прототип.</div><div>© 2026 ORTAQ LAB</div></footer>
+
+<div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal"><div class="modal-head"><div><div class="kicker">ORTAQ LAB</div><h2 id="modalTitle">Жоба ұсыну</h2><p class="sub" id="modalSubtitle">Идеяңды қысқаша таныстыр.</p></div><button class="close" onclick="closeModal()" aria-label="Жабу">×</button></div>
+ <form id="projectForm">
+  <div id="projectFields">
+   <div class="field"><label for="pTitle">Жоба атауы *</label><input id="pTitle" required maxlength="70" placeholder="Мысалы: Қазақша оқу платформасы"></div>
+   <div class="field"><label for="pCategory">Бағыты *</label><select id="pCategory" required><option value="IT">IT</option><option value="Білім">Білім</option><option value="Мәдениет">Мәдениет</option><option value="Әлеуметтік">Әлеуметтік</option></select></div>
+   <div class="field"><label for="pDesc">Қысқаша сипаттама *</label><textarea id="pDesc" required maxlength="350" placeholder="Қандай мәселені шешеді?"></textarea></div>
+   <div class="field"><label for="pCountry">Елің / қалаң</label><input id="pCountry" placeholder="Мысалы: Моңғолия, Баян-Өлгий"></div>
+   <div class="field"><label for="pSkills">Қандай команда керек?</label><input id="pSkills" placeholder="Мысалы: бағдарламашы, дизайнер"></div>
+   <div class="field"><label for="pContact">Байланыс тәсілі *</label><input id="pContact" required placeholder="Email немесе Telegram username"><small>Қоғамдық демоға жеке телефон нөмірін енгізбе.</small></div>
+  </div>
+  <div id="joinFields" style="display:none">
+   <div class="field"><label for="jName">Атың *</label><input id="jName" maxlength="60" placeholder="Атың" /></div>
+   <div class="field"><label for="jCountry">Елің / қалаң</label><input id="jCountry" placeholder="Қай жерден қатысасың?"></div>
+   <div class="field"><label for="jSkills">Дағдыларың *</label><input id="jSkills" placeholder="Мысалы: Python, дизайн, аударма"></div>
+   <div class="field"><label for="jContact">Байланыс тәсілі *</label><input id="jContact" placeholder="Email немесе Telegram username"></div>
+  </div>
+  <p class="form-note" id="storageNote">Демо нұсқада енгізілген деректер осы браузерде ғана сақталады. Олар автоматты түрде ұйымдастырушыға жіберілмейді.</p>
+  <button class="btn btn-primary" type="submit" style="width:100%;margin-top:8px">Өтінімді сақтау</button>
+ </form></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const demoProjects = [
+ {id:"d1",title:"ORTAQ Learn: қазақша IT білім",category:"Білім",desc:"Қазақ тілінде IT негіздерін үйренуге арналған шағын сабақтар мен тапсырмалар жинағын жасау.",country:"Қазақстан · Моңғолия",skills:"Контент, веб-әзірлеу",emoji:"📚",demo:true},
+ {id:"d2",title:"Көру қабілеті төмен адамдарға AI көмекшісі",category:"IT",desc:"Компьютерлік көру арқылы айналадағы нысандарды танып, дыбыспен хабарлайтын көмекші прототипін зерттеу.",country:"Қазақстан",skills:"Python, AI, UX",emoji:"🤖",demo:true},
+ {id:"d3",title:"Қазақ мұрасы цифрлық картада",category:"Мәдениет",desc:"Қазақ тарихы, жер-су атаулары мен мәдени орындар туралы ақпаратты бір интерактивті картаға жинау.",country:"Моңғолия · Қазақстан",skills:"Дизайн, зерттеу, карта",emoji:"🗺️",demo:true},
+ {id:"d4",title:"Жастарға арналған еріктілер желісі",category:"Әлеуметтік",desc:"Еріктілерді шағын әлеуметтік бастамалармен байланыстырып, бірге іс-шара ұйымдастыру.",country:"Халықаралық",skills:"Ұйымдастыру, медиа",emoji:"🌱",demo:true},
+ {id:"d5",title:"Student Buddy: студенттерге қолдау",category:"Білім",desc:"Жаңа келген студенттерге оқу орны, қала және күнделікті мәселелер бойынша пайдалы кеңестер жинау.",country:"Қазақстан",skills:"Дизайн, мәтін, веб",emoji:"🎓",demo:true},
+ {id:"d6",title:"Qazaq Voice: ауызша мұра мұрағаты",category:"Мәдениет",desc:"Әртүрлі елдегі қазақтардың әңгімелері, диалектілері мен естеліктерін келісіммен жинайтын аудио мұрағат.",country:"Әлемдегі қазақтар",skills:"Аудио, аударма, зерттеу",emoji:"🎙️",demo:true}
+];
+let projects = load("ortaqProjects", demoProjects);
+let currentMode = "project";
+function load(key,fallback){try{const x=localStorage.getItem(key);return x?JSON.parse(x):fallback}catch(e){return fallback}}
+function save(key,val){try{localStorage.setItem(key,JSON.stringify(val));return true}catch(e){return false}}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function render(filter="Барлығы"){
+ const grid=document.getElementById("projectGrid");
+ const shown=projects.filter(p=>filter==="Барлығы"||p.category===filter);
+ if(!shown.length){grid.innerHTML='<div class="empty">Бұл бағытта әзірге жоба жоқ. Алғашқы идеяны сен ұсына аласың! ✨</div>';return}
+ grid.innerHTML=shown.map(p=>`<article class="project"><div class="project-top"><div class="emoji">${esc(p.emoji||"💡")}</div><span class="tag">${esc(p.category)}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p><div class="meta">📍 ${esc(p.country||"Көрсетілмеген")}<br>🧩 Іздейді: ${esc(p.skills||"Команда мүшелері")}</div><button class="btn btn-light" onclick="openModal('join','${esc(p.id)}')">Командаға қосылу ↗</button></article>`).join("");
+}
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-filter]");if(!b)return;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render(b.dataset.filter)});
+function openModal(mode,projectId){
+ currentMode=mode;const back=document.getElementById("projectModal");
+ document.getElementById("projectFields").style.display=mode==="project"?"block":"none";
+ document.getElementById("joinFields").style.display=mode==="join"?"block":"none";
+ document.getElementById("modalTitle").textContent=mode==="project"?"Жоба ұсыну":"Командаға қосылу";
+ document.getElementById("modalSubtitle").textContent=mode==="project"?"Идеяңды қысқаша таныстыр.":"Өзің және көмектесе алатын дағдыларың туралы жаз.";
+ document.getElementById("projectForm").dataset.projectId=projectId||"";
+ back.classList.add("open");document.body.style.overflow="hidden";
+}
+function closeModal(){document.getElementById("projectModal").classList.remove("open");document.body.style.overflow="";}
+document.getElementById("projectModal").addEventListener("click",e=>{if(e.target.id==="projectModal")closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),3600)}
+document.getElementById("projectForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ if(currentMode==="project"){
+  const p={id:"u"+Date.now(),title:document.getElementById("pTitle").value.trim(),category:document.getElementById("pCategory").value,desc:document.getElementById("pDesc").value.trim(),country:document.getElementById("pCountry").value.trim()||"Көрсетілмеген",skills:document.getElementById("pSkills").value.trim()||"Команда мүшелері",contact:document.getElementById("pContact").value.trim(),emoji:{"IT":"💻","Білім":"📚","Мәдениет":"🎨","Әлеуметтік":"🌱"}[document.getElementById("pCategory").value],demo:false};
+  projects.unshift(p);if(!save("ortaqProjects",projects)){projects.shift();toast("Браузерде сақтау мүмкін болмады. Қайта көр.");return}
+  document.getElementById("projectForm").reset();closeModal();render(document.querySelector(".filter.active")?.dataset.filter||"Барлығы");toast("Жоба осы браузерде сақталды! 🎉");
+ }else{
+  const req={projectId:document.getElementById("projectForm").dataset.projectId,name:document.getElementById("jName").value.trim(),country:document.getElementById("jCountry").value.trim(),skills:document.getElementById("jSkills").value.trim(),contact:document.getElementById("jContact").value.trim(),date:new Date().toISOString()};
+  if(!req.name||!req.skills||!req.contact){toast("Жұлдызшамен белгіленген өрістерді толтыр.");return}
+  const requests=load("ortaqJoinRequests",[]);requests.push(req);if(!save("ortaqJoinRequests",requests)){toast("Сақтау мүмкін болмады. Қайта көр.");return}
+  document.getElementById("projectForm").reset();closeModal();toast("Өтінім демо ретінде осы браузерге сақталды! 🤝");
+ }
+});
+render();
+</script>
+</body>
+</html>
